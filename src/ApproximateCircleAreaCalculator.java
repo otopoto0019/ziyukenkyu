@@ -1,5 +1,3 @@
-package util;
-
 import util.math.Fraction;
 import util.math.SquareRoot;
 
