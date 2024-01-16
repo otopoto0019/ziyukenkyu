@@ -7,7 +7,6 @@ import java.util.function.BiFunction;
 
 
 public class ApproximateCircleAreaCalculator {
-    //xは区分間隔,radiumは計算したい円の半径
     static BiFunction<Fraction, Fraction, SquareRoot> calculateHeight = (x, radium) -> new SquareRoot(Fraction.subtractFractions(Fraction.powerFraction(radium,2),Fraction.powerFraction(x,2)));
 
     //xは区分間隔,radiumは計算したい円の半径
