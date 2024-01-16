@@ -10,6 +10,7 @@ public class ApproximateCircleAreaCalculator {
     static BiFunction<Fraction, Fraction, SquareRoot> calculateHeight = (x, radium) -> new SquareRoot(Fraction.subtractFractions(Fraction.powerFraction(radium,2),Fraction.powerFraction(x,2)));
     static BiFunction<Fraction, SquareRoot, SquareRoot> calculateSectionalSquare = SquareRoot::multiplySquareRoot;
 
+    //xは区分間隔,radiumは計算したい円の半径
     static BiFunction<Fraction, Fraction, Double> sumTotalArea = (x, radium) -> {
 
         List<SquareRoot> sectionalSquares = new ArrayList<>();
