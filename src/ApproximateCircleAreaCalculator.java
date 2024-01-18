@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 
+import static util.math.SquareRoot.multiplySquareRoot;
+
 
 public class ApproximateCircleAreaCalculator {
     static BiFunction<Fraction, Fraction, SquareRoot> calculateHeight = (x, radium) -> new SquareRoot(Fraction.subtractFractions(Fraction.powerFraction(radium,2),Fraction.powerFraction(x,2)));
